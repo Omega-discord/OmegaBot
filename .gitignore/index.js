@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const prefix = ".";
-bot.login('NTg4MzYwMDkyMTM1NTg3ODUy.XQJFnA.7ylXSfLwM3hGubRQvTyfEdvXLPA')
+bot.login(process.env.TOKEN)
 var mention = "67 connectés"
  
 var fucked = false;
