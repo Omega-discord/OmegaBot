@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const prefix = ".";
-//bot.login(process.env.TOKEN)
-bot.login("NTg4MzYwMDkyMTM1NTg3ODUy.XUQ7hA.jjyepowHTylFJ5fsYeF5PzbANBI").catch(err => console.log("Token invalide"));
+bot.login(process.env.TOKEN)
+//bot.login("NTg4MzYwMDkyMTM1NTg3ODUy.XUQ7hA.jjyepowHTylFJ5fsYeF5PzbANBI").catch(err => console.log("Token invalide"));
 //var mention = "67 connectés"
 
 var fucked = false;
